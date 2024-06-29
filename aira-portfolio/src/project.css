@@ -169,9 +169,9 @@
     padding-left: 5px; /* Padding from the left */
   }
 
-  .track-image {
-    width: 30px; /* Smaller size for mobile */
-    height: 30px;
+  .title-icon {
+    width: 120px; /* Smaller size for mobile */
+    height: 120px;
     margin-right: 10px;
   }
 

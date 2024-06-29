@@ -163,8 +163,7 @@
   
   
   
-/* For Mobile Responsiveness */
-@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .profile-header {
         flex-direction: column;
         align-items: center;
@@ -173,4 +172,23 @@
     .profile-image {
         margin-bottom: 10px;
     }
+
+    .skills-container, .education-container, .co-curricular-container {
+        justify-content: space-between; /* Adjust if needed to fit design */
+    }
+
+    .skill, .education, .co-curricular {
+        flex-basis: calc(33.333% - 10px); /* Adjusted for margin to fit 3 items per row */
+        margin: 5px; /* Ensures space around each item */
+    }
+
+    .skill-image, .education-image, .co-curricular-image {
+        width: 90px; /* Smaller image sizes for mobile view */
+        height: 90px;
+    }
+
+    .skill-name, .education-name, .co-curricular-name {
+        text-align: left;
+    }
 }
+
