@@ -31,7 +31,7 @@ function Profile() {
             <img src={profilePic} alt="Profile" className="profile-image"/>
             <div className="profile-info">
             <h1>Aira Natividad</h1>
-            <p>anatividad@up.edu.ph</p>
+            <p>annatividad@up.edu.ph</p>
             </div>
         </div>
         
