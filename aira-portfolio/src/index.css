@@ -29,7 +29,7 @@ html, body {
   
   .column.right {
     flex: 2 2 67%; /* Right column takes the remaining space */
-    background-color: #1e1e1e;
+    /*background-color: #1e1e1e;*/
   }
   
   .profile-container {

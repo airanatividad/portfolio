@@ -1,0 +1,92 @@
+
+.right-column {
+    background-color: #000000; /* Overall right column background */
+    padding: 0; /* Remove padding if you want the title card to touch the edges */
+    margin: 0;
+  }
+
+.playlist-container {
+    background-color: #121212; /* Specific background for the playlist container */
+    border-radius: 10px; /* Optional: adds rounded corners for better visuals */
+  }
+  
+  .playlist-header {
+    display: flex;
+    padding: 10px;
+    color: #fff;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .header-item {
+    flex: 1;
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .playlist-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #333;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  
+  .track-number {
+    flex: 0 0 20px; 
+  }
+  
+  .track-info {
+    flex: 3; 
+    display: flex;
+    align-items: center;
+    padding-left: 10px; 
+  }
+  
+  .track-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .track-title, .track-artist {
+    display: block;
+  }
+  
+  .track-album {
+    flex: 2;
+  }
+  
+  .track-added {
+    flex: 1; 
+  }
+  
+  .track-duration {
+    flex: 1; 
+  }
+  
+  .projects-title-card {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to bottom, #1B2268, #121212); /* Gradient background */
+    padding: 80px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
+    margin: 0; /* Removes any margin to make it stick to the container edges */
+    border-radius: 10px; /* Makes corners rounder */
+}
+
+.title-icon {
+    width: 200px; /* Adjusted size */
+    height: 200px;
+    background-color: #ffffff; /* White background for visibility */
+    margin-right: 20px; /* Right margin for spacing between the icon and text */
+    margin-top: 20px; /* Adds space at the top of the square image */
+    border-radius: 10px
+}
+
+.projects-title-card h1 {
+    color: white; /* White text for visibility against the gradient */
+    margin: 0; /* Removes default margin */
+}
+
+  

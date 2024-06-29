@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import Profile from './profile';
+import Projects from './project';
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <Profile />  {/* profile */}
       </div>
       <div className="column right">
-        Right Column Content  {/* projects */}
+        <Projects />  {/* projects */}
       </div>
     </div>
   );
