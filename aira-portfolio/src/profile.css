@@ -1,12 +1,27 @@
 .profile-container {
-    background-color: #121212;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    width: 100%; /* Adjust width as necessary */
-    max-width: 500px; /* Optional: max-width to prevent too wide container on larger screens */
+    background-color: #121212;  /* Dark background for the container */
+    border-radius: 10px;        /* Rounded corners for visual appeal */
+    padding: 20px;              /* Padding inside the container to prevent content from touching the edges */
+    margin: 5px;                /* Uniform margin around the container */
+    margin-top: 50px;           /* Additional top margin to lower the container within the column */
+    width: 100%;                /* Container takes the full width available within its parent */
+    max-width: 500px;           /* Maximum width to prevent the container from being too wide */
+    max-height: calc(100vh - 40px); /* Maximum height adjusted for the additional top margin */
+    overflow-y: auto;           /* Allows vertical scrolling within the container */
+    scrollbar-width: none;      /* Hides the scrollbar in Firefox */
+
+    /* Hides the scrollbar in WebKit browsers (Chrome, Safari, newer versions of Edge) */
+    /* This style needs to be nested directly under WebKit specific pseudo-elements. */
 }
-  
+
+/* WebKit browsers scrollbar hiding */
+.profile-container::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
 .profile-header {
     display: flex;
     align-items: center;
@@ -32,6 +47,122 @@
     color: #1DB954; /* Spotify green for headings */
 }
 
+/* Profile.css */
+.skills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .skills-header h2 {
+    margin: 0; /* Removes default margin from h2 */
+  }
+  
+  .show-all-text {
+    cursor: pointer;
+    color: gray; /* Sets the text color to gray */
+    font-size: 16px; /* Optional: set a specific font size */
+  }
+  
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Space items evenly */
+    margin-top: 10px; /* Space below the header */
+  }
+  
+  .skill {
+    margin: 3px 3px 20px 3px; /* Reduced side margins and increased bottom margin */
+    flex-basis: calc(33% - 6px); /* Adjust width minus margin, assuming 3px margin on each side */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .skill-image {
+    width: 120px; /* Set a fixed width */
+    height: 120px; /* Set height equal to width to maintain square aspect ratio */
+    border-radius: 5px;
+    object-fit: cover; /* Ensures the image covers the area properly without stretching */
+  }
+  
+  .skill-name {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+
+  /* education */
+  .education-container {
+    display: flex;
+    justify-content: space-between; /* Keeps items evenly spaced */
+    align-items: flex-start; /* Aligns items at the top */
+    margin-top: 10px;
+  }
+  
+  .education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px; /* Uniform margin around each item */
+    flex-basis: calc(33% - 10px); /* Consistent width as in skills */
+  }
+  
+  .education-image {
+    width: 120px; /* Consistent size for all circles */
+    height: 120px;
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Ensures images fit the dimensions without distortion */
+    margin-bottom: 5px; /* Space between the image and the text */
+  }
+  
+  .education-name {
+    text-align: center;
+    font-size: 14px; /* Appropriate font size */
+    max-height: 54px; /* Max height for text to accommodate up to three lines */
+    overflow: hidden; /* Hides overflow text */
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limits text to three lines */
+    -webkit-box-orient: vertical;
+  }
+  
+/*co-curricular*/
+.co-curricular-container {
+    display: flex;
+    justify-content: flex-start; /* Aligns items to the left */
+    align-items: flex-start; /* Ensures top alignment */
+    margin-top: 10px;
+  }
+  
+  .co-curricular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    flex-basis: calc(33% - 10px); /* Takes up space as if it were one of three items */
+  }
+  
+  .co-curricular-image {
+    width: 120px; /* Consistent size with education section */
+    height: 120px;
+    border-radius: 50%; /* Circle shape */
+    object-fit: cover; /* Ensures the image fits the frame properly */
+    margin-bottom: 5px; /* Space between image and text */
+  }
+  
+  .co-curricular-name {
+    text-align: center;
+    font-size: 14px;
+    max-height: 54px; /* Allows for up to three lines */
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  
+  
+  
 /* For Mobile Responsiveness */
 @media (max-width: 768px) {
     .profile-header {
