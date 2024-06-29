@@ -26,13 +26,45 @@
   
   .playlist-item {
     display: flex;
-    align-items: center;
-    border-bottom: 1px solid #333;
+    flex-direction: column; /* This ensures all elements stack vertically */
+    align-items: flex-start;
     padding: 10px;
     margin-left: 20px;
     margin-right: 20px;
+}
+  
+  .playlist-item:not(.expanded) {
+    border-bottom: 1px solid #333; /* Only show border if not expanded */
   }
   
+  .track-details {
+    display: flex;
+    flex-direction: row; /* Ensures horizontal layout of details */
+    width: 100%; /* Full width to accommodate children */
+    align-items: center; /* Vertical alignment of children */
+}
+
+.track-description {
+    background-color: #202020; /* Slightly lighter for emphasis */
+    color: #fff;
+    padding: 10px 40px;
+    margin-left: 50px; /* Align with the track items */
+    margin-right: 20px;
+    display: none; /* Hide by default */
+}
+
+.expanded .track-description {
+    display: block; /* Show only when expanded */
+}
+  
+  .expanded {
+    background-color: #202020; /* Highlight expanded item */
+  }
+
+  .expanded-title {
+    color: #1DB954; /* Green color for expanded track titles */
+  }
+
   .track-number {
     flex: 0 0 20px; 
   }
@@ -65,7 +97,16 @@
   .track-duration {
     flex: 1; 
   }
+
+  .track-duration a {
+    margin-right: 10px; /* Spacing between icons */
+    color: #fff; /* Icon color */
+  }
   
+  .track-duration i {
+    cursor: pointer; /* Pointer cursor on hover */
+  }
+
   .projects-title-card {
     display: flex;
     align-items: center;
@@ -73,7 +114,7 @@
     padding: 80px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
     margin: 0; /* Removes any margin to make it stick to the container edges */
     border-radius: 10px; /* Makes corners rounder */
-}
+  }
 
 .title-icon {
     width: 200px; /* Adjusted size */
@@ -88,5 +129,73 @@
     color: white; /* White text for visibility against the gradient */
     margin: 0; /* Removes default margin */
 }
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  .playlist-header, .track-artist, .track-album, .track-added, .track-duration, .track-description {
+    display: none; /* Hide header and details initially */
+  }
+
+  .expanded .track-artist, .expanded .track-album, .expanded .track-added, .expanded .track-duration {
+    display: flex; /* Show these details in expanded view */
+    flex-basis: 25%; /* Each takes up 25% of the width */
+    justify-content: flex-start; /* Align items to the start */
+    text-align: left; /* Text aligned to the left */
+  }
+
+  .playlist-item {
+    display: flex;
+    flex-direction: column; /* Layout changes to column to accommodate description row */
+    align-items: flex-start; /* Align items to the start of the flex container */
+    padding: 10px 5px; /* Reduced padding */
+    text-align: left; /* Align all text to the left */
+  }
+
+  
+
+  .track-details { /* New class for wrapping all details except description */
+    display: flex;
+    flex-direction: row; /* Maintains row layout for all details */
+    width: 100%; /* Full width */
+    align-items: center; /* Center items vertically */
+    justify-content: flex-start; /* Align all items to the start */
+  }
+
+  .track-info {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: row; /* Ensure items are in a row */
+    padding-left: 5px; /* Padding from the left */
+  }
+
+  .track-image {
+    width: 30px; /* Smaller size for mobile */
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .track-title {
+    font-size: 16px; /* Smaller font size for mobile */
+  }
+
+  .track-description {
+    display: none; /* Initially hidden */
+    margin-left: 25px; /* track description margin to left mobile view*/
+  }
+
+  .expanded .track-description {
+    display: block; /* Show description when expanded */
+    padding-top: 10px; /* Additional padding for clarity */
+    text-align: left; /* Align text to the left */
+  }
+}
+
+
+
+
+
+
+
 
   
