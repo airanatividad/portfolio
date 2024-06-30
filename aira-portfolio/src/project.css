@@ -1,14 +1,36 @@
 
+
 .right-column {
-    background-color: #000000; /* Overall right column background */
-    padding: 0; /* Remove padding if you want the title card to touch the edges */
-    margin: 0;
-  }
+  background-color: #000000; /* Overall right column background */
+  padding: 0; /* Remove padding if you want the title card to touch the edges */
+  margin-right: 5px;
+  margin-top: 5px;
+  justify-content: center; /* Centers the inner container horizontally */
+  align-items: center; /* Centers the inner container vertically */
+  overflow-y: auto; /* Enables vertical scrolling */
+  height: 100vh; /* Sets a fixed height, adjust as needed */
+}
+
+.right-column::-webkit-scrollbar {
+  width: 0px; /* Removes scrollbar width */
+  background: transparent; /* Makes scrollbar transparent */
+}
+
+.right-column::-webkit-scrollbar-thumb {
+  background: transparent; /* Makes scrollbar thumb transparent */
+}
+
+.right-column {
+  scrollbar-width: none; /* Firefox option to hide the scrollbar */
+}
+
 
 .playlist-container {
-    background-color: #121212; /* Specific background for the playlist container */
-    border-radius: 10px; /* Optional: adds rounded corners for better visuals */
-  }
+  background-color: #121212; /* Specific background for the playlist container */
+  border-radius: 10px; /* Optional: adds rounded corners for better visuals */
+  justify-content: center; /* Centers the inner container horizontally */
+  align-items: center; /* Centers the inner container vertically */
+}
   
   .playlist-header {
     display: flex;
@@ -53,6 +75,41 @@
     display: none; /* Hide by default */
 }
 
+.playlist-item.expanded {
+  background-color: #202020; /* Darker to highlight expansion */
+  color: #fff;
+}
+
+.track-description {
+  display: block; /* Show the description */
+  padding: 10px 40px;
+  margin-left: 50px; /* Proper alignment with track items */
+  margin-right: 20px;
+}
+
+.play-button {
+  font-size: 24px; /* Icon size */
+  color: black; /* Icon color */
+  background-color: #1DB954; /* Button background */
+  border: 3px solid #1DB954; /* Green border */
+  border-radius: 50%; /* Makes the button round */
+  cursor: pointer;
+  width: 50px; /* Diameter of the button */
+  height: 50px; /* Diameter of the button */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  padding: 0; /* Remove any default padding */
+  outline: none; /* Remove focus outline */
+  margin-left: 30px; /* Left alignment with the title icon and column header */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.play-button i {
+  pointer-events: none; /* Prevents the icon from being clickable separately from the button */
+}
+
 .expanded .track-description {
     display: block; /* Show only when expanded */
 }
@@ -61,7 +118,7 @@
     background-color: #202020; /* Highlight expanded item */
   }
 
-  .expanded-title {
+  .expanded .track-title {
     color: #1DB954; /* Green color for expanded track titles */
   }
 
@@ -117,18 +174,62 @@
   }
 
 .title-icon {
-    width: 200px; /* Adjusted size */
-    height: 200px;
-    background-color: #ffffff; /* White background for visibility */
-    margin-right: 20px; /* Right margin for spacing between the icon and text */
-    margin-top: 20px; /* Adds space at the top of the square image */
-    border-radius: 10px
+  width: 200px; /* Adjusted size */
+  height: 200px;
+  background-color: #ffffff; /* White background for visibility */
+  margin-right: 20px; /* Right margin for spacing between the icon and text */
+  margin-top: 20px; /* Adds space at the top of the square image */
+  border-radius: 10px
 }
 
-.projects-title-card h1 {
-    color: white; /* White text for visibility against the gradient */
-    margin: 0; /* Removes default margin */
+.project-details {
+  display: flex;
+  align-items: flex-end; /* Aligns text with the bottom of the title-icon */
+  color: white;
+  font-size: 16px; /* Adjust size as necessary */
 }
+
+.project-text {
+  margin-bottom: 5px; 
+  display: flex;
+  flex-direction: column; /* Stacks children vertically */
+  height: 200px;
+}
+
+.project-title {
+  flex: 5;
+  display: flex;
+  font-size: 90px; /* Adjust size as needed */
+  line-height: 1.2; /* Adjust line height for better vertical spacing */
+  color: white; /* Maintains text color */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Adjust padding to fit design, could be 0 */
+  align-items: flex-end;
+}
+
+.project-details {
+  flex: 1;
+  display: flex;
+  align-items: flex-end; /* Vertically centers the link and text within the 'project-details' */
+  color: white;
+  font-size: 16px; /* Adjust size as necessary */
+  margin-top: 5px; /* Optional: Adds a small gap between the h1 and the details */
+}
+
+.project-details a {
+  color: #1DB954; /* Bright green for link for consistency with design */
+  text-decoration: none; /* Removes underline */
+}
+
+.project-details a:hover {
+  text-decoration: underline; /* Adds underline on hover for better interaction */
+}
+
+.project-details span {
+  margin-left: 5px; /* Adds a small space between the link and the span text */
+  color: white; /* Ensures visibility */
+}
+
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {
@@ -151,12 +252,9 @@
     text-align: left; /* Align all text to the left */
   }
 
-  
-
   .track-details { /* New class for wrapping all details except description */
     display: flex;
     flex-direction: row; /* Maintains row layout for all details */
-    width: 100%; /* Full width */
     align-items: center; /* Center items vertically */
     justify-content: flex-start; /* Align all items to the start */
   }
@@ -175,8 +273,31 @@
     margin-right: 10px;
   }
 
-  .track-title {
-    font-size: 16px; /* Smaller font size for mobile */
+  .project-text {
+    margin-bottom: 5px; 
+    display: flex;
+    flex-direction: column; /* Stacks children vertically */
+    height: 120px;
+  }
+  
+  .project-title {
+    flex: 5;
+    display: flex;
+    font-size: 40px; /* Adjust size as needed */
+    line-height: 1.2; /* Adjust line height for better vertical spacing */
+    color: white; /* Maintains text color */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Adjust padding to fit design, could be 0 */
+    align-items: flex-end;
+  }
+  
+  .project-details {
+    flex: 1;
+    display: flex;
+    align-items: flex-end; /* Vertically centers the link and text within the 'project-details' */
+    color: white;
+    font-size: 16px; /* Adjust size as necessary */
+    margin-top: 5px; /* Optional: Adds a small gap between the h1 and the details */
   }
 
   .track-description {

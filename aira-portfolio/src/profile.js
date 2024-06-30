@@ -5,7 +5,7 @@ import profilePic from './Natividad.jpg';
 
 function Profile() {
     const [showAll, setShowAll] = useState(false); // State to toggle showing all skills
-    const skills = [
+    const techskills = [
         { name: "JavaScript", img: placeholderImage },
         { name: "C", img: placeholderImage },
         { name: "Python", img: placeholderImage },
@@ -37,13 +37,13 @@ function Profile() {
         
         <div className="profile-section">
             <div className="skills-header">
-                <h2>Skills and Interests</h2>
+                <h2>Technical Skills</h2>
                 <span onClick={() => setShowAll(!showAll)} className="show-all-text">
                 {showAll ? "Show Less" : "Show All"}
                 </span>
             </div>
             <div className="skills-container">
-                {skills.slice(0, showAll ? skills.length : 3).map((skill, index) => (
+                {techskills.slice(0, showAll ? techskills.length : 3).map((skill, index) => (
                 <div key={index} className="skill">
                     <img src={skill.img} alt={skill.name} className="skill-image"/>
                     <div className="skill-name">{skill.name}</div>

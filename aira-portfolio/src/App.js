@@ -1,5 +1,5 @@
 import React from 'react';
-import './index.css';
+import './App.css';
 import Profile from './profile';
 import Projects from './project';
 

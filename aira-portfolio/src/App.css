@@ -1,0 +1,67 @@
+/* Global and container styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000; /* Entire site background */
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  padding: 0;
+}
+
+.column {
+  padding: 20px; /* Padding around column content */
+}
+
+.column.left {
+  flex: 1 1 33%; /* Left column takes 1/3 of the space */
+  display: flex;
+  justify-content: center; /* Centers the inner container horizontally */
+  align-items: center; /* Centers the inner container vertically */
+  padding: 0%;
+}
+
+.column.right {
+  flex: 2 2 67%; /* Right column takes the remaining space */
+  padding: 0%;
+  justify-content: center; /* Centers the inner container horizontally */
+  align-items: center; /* Centers the inner container vertically */
+  /*background-color: #1e1e1e;*/
+}
+
+html {
+  height: 100%; /* Full height to contain the body */
+  overflow-y: auto; /* Allows scrolling */
+}
+
+body {
+  margin: 0;
+  height: 100%; /* Full height */
+  overflow-y: scroll; /* Keeps the document flow */
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+  -ms-overflow-style: none; /* Hides scrollbar in IE and Edge */
+}
+
+body::-webkit-scrollbar {
+  width: 0px; /* Removes scrollbar space for Webkit browsers */
+  display: none; /* Ensures scrollbar does not appear */
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column.left, .column.right {
+    flex: 1 0 100%; /* Make both columns full width on smaller screens */
+  }
+}
+  

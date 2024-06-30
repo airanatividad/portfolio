@@ -3,7 +3,7 @@
     border-radius: 10px;        /* Rounded corners for visual appeal */
     padding: 20px;              /* Padding inside the container to prevent content from touching the edges */
     margin: 5px;                /* Uniform margin around the container */
-    margin-top: 50px;           /* Additional top margin to lower the container within the column */
+    margin-top: 15px;           /* Additional top margin to lower the container within the column */
     width: 100%;                /* Container takes the full width available within its parent */
     max-width: 500px;           /* Maximum width to prevent the container from being too wide */
     max-height: calc(100vh - 40px); /* Maximum height adjusted for the additional top margin */
@@ -18,8 +18,6 @@
 .profile-container::-webkit-scrollbar {
     display: none;
 }
-
-
 
 
 .profile-header {
