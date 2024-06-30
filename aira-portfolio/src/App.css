@@ -1,4 +1,12 @@
 /* Global and container styles */
+/* In App.css or a new file like fonts.css */
+@font-face {
+  font-family: 'Circular';
+  src: url('../public/fonts/CircularSpotifyText-Medium.otf') format('truetype'); /* Adjust the path as necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -6,7 +14,7 @@ html, body {
   height: 100%;
   background-color: #000000; /* Entire site background */
   color: #ffffff;
-  font-family: Arial, sans-serif;
+  font-family: 'Circular', sans-serif;
 }
 
 .container {

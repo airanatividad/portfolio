@@ -30,14 +30,14 @@ function Profile() {
         <div className="profile-header">
             <img src={profilePic} alt="Profile" className="profile-image"/>
             <div className="profile-info">
-            <h1>Aira Natividad</h1>
-            <p>annatividad@up.edu.ph</p>
+                <h1>Aira Natividad</h1>
+                <p>annatividad@up.edu.ph | 09604717131</p>
             </div>
         </div>
         
         <div className="profile-section">
             <div className="skills-header">
-                <h2>Technical Skills</h2>
+                <h2>Skills and Interests</h2>
                 <span onClick={() => setShowAll(!showAll)} className="show-all-text">
                 {showAll ? "Show Less" : "Show All"}
                 </span>

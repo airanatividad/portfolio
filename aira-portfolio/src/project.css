@@ -1,4 +1,9 @@
-
+@font-face {
+  font-family: 'Circular Bold';
+  src: url('../public/fonts/CircularSpotifyText-Black.otf') format('truetype'); /* Adjust the path as necessary */
+  font-weight: bold;
+  font-style: bold;
+}
 
 .right-column {
   background-color: #000000; /* Overall right column background */
@@ -24,60 +29,63 @@
   scrollbar-width: none; /* Firefox option to hide the scrollbar */
 }
 
-
 .playlist-container {
   background-color: #121212; /* Specific background for the playlist container */
   border-radius: 10px; /* Optional: adds rounded corners for better visuals */
   justify-content: center; /* Centers the inner container horizontally */
   align-items: center; /* Centers the inner container vertically */
+  margin-bottom: 5px;
 }
   
-  .playlist-header {
-    display: flex;
-    padding: 10px;
-    color: #fff;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-  
-  .header-item {
-    flex: 1;
-    text-align: left;
-    padding: 0 10px;
-  }
-  
-  .playlist-item {
-    display: flex;
-    flex-direction: column; /* This ensures all elements stack vertically */
-    align-items: flex-start;
-    padding: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
+.playlist-header {
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-item {
+  flex: 1;
+  text-align: left;
+  padding: 0 10px;
+}
+
+.playlist-item {
+  display: flex;
+  flex-direction: column; /* This ensures all elements stack vertically */
+  align-items: flex-start;
+  padding: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  cursor: pointer
+
 }
   
-  .playlist-item:not(.expanded) {
-    border-bottom: 1px solid #333; /* Only show border if not expanded */
-  }
-  
-  .track-details {
-    display: flex;
-    flex-direction: row; /* Ensures horizontal layout of details */
-    width: 100%; /* Full width to accommodate children */
-    align-items: center; /* Vertical alignment of children */
+.playlist-item {
+  border-bottom: 1px solid #333; /* Only show border if not expanded */
+}
+
+.track-details {
+  display: flex;
+  flex-direction: row; /* Ensures horizontal layout of details */
+  width: 100%; /* Full width to accommodate children */
+  align-items: center; /* Vertical alignment of children */
 }
 
 .track-description {
-    background-color: #202020; /* Slightly lighter for emphasis */
-    color: #fff;
-    padding: 10px 40px;
-    margin-left: 50px; /* Align with the track items */
-    margin-right: 20px;
-    display: none; /* Hide by default */
+  background-color: #202020; /* Slightly lighter for emphasis */
+  color: #fff;
+  padding: 10px 40px;
+  margin-left: 50px; /* Align with the track items */
+  margin-right: 20px;
+  display: none; /* Hide by default */
 }
 
 .playlist-item.expanded {
   background-color: #202020; /* Darker to highlight expansion */
   color: #fff;
+  border-radius: 5px;
 }
 
 .track-description {
@@ -114,64 +122,76 @@
     display: block; /* Show only when expanded */
 }
   
-  .expanded {
-    background-color: #202020; /* Highlight expanded item */
-  }
+.expanded {
+  background-color: #202020; /* Highlight expanded item */
+}
 
-  .expanded .track-title {
-    color: #1DB954; /* Green color for expanded track titles */
-  }
+.expanded .track-title {
+  color: #1DB954; /* Green color for expanded track titles */
+}
 
-  .track-number {
-    flex: 0 0 20px; 
-  }
-  
-  .track-info {
-    flex: 3; 
-    display: flex;
-    align-items: center;
-    padding-left: 10px; 
-  }
-  
-  .track-image {
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-  }
-  
-  .track-title, .track-artist {
-    display: block;
-  }
-  
-  .track-album {
-    flex: 2;
-  }
-  
-  .track-added {
-    flex: 1; 
-  }
-  
-  .track-duration {
-    flex: 1; 
-  }
+.track-number {
+  flex: 0 0 20px; 
+  color: gray;
+}
 
-  .track-duration a {
-    margin-right: 10px; /* Spacing between icons */
-    color: #fff; /* Icon color */
-  }
-  
-  .track-duration i {
-    cursor: pointer; /* Pointer cursor on hover */
-  }
+.track-info {
+  flex: 3; 
+  display: flex;
+  align-items: center;
+  padding-left: 10px; 
+}
 
-  .projects-title-card {
-    display: flex;
-    align-items: center;
-    background: linear-gradient(to bottom, #1B2268, #121212); /* Gradient background */
-    padding: 80px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
-    margin: 0; /* Removes any margin to make it stick to the container edges */
-    border-radius: 10px; /* Makes corners rounder */
-  }
+.track-info-head {
+  flex: 3; 
+  display: flex;
+  align-items: center;
+  padding-left: 10px; 
+  color: gray;
+}
+
+.track-image {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.track-album {
+  flex: 2;
+  color: gray;
+}
+
+.track-added {
+  flex: 1; 
+  color: gray;
+}
+
+.track-duration {
+  flex: 1; 
+  color: gray;
+}
+
+.track-duration a {
+  margin-right: 10px; /* Spacing between icons */
+  color: gray; /* Icon color */
+}
+
+.track-artist {
+  color: gray;
+}
+
+.track-duration i {
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.projects-title-card {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(to bottom, #1DB954, #121212); /* Gradient background */
+  padding: 80px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
+  margin: 0; /* Removes any margin to make it stick to the container edges */
+  border-radius: 10px; /* Makes corners rounder */
+}
 
 .title-icon {
   width: 200px; /* Adjusted size */
@@ -179,6 +199,7 @@
   background-color: #ffffff; /* White background for visibility */
   margin-right: 20px; /* Right margin for spacing between the icon and text */
   margin-top: 20px; /* Adds space at the top of the square image */
+  margin-left: 10px;
   border-radius: 10px
 }
 
@@ -197,14 +218,15 @@
 }
 
 .project-title {
-  flex: 5;
+  flex: 18;
   display: flex;
-  font-size: 90px; /* Adjust size as needed */
+  font-size: 100px; /* Adjust size as needed */
   line-height: 1.2; /* Adjust line height for better vertical spacing */
   color: white; /* Maintains text color */
   margin: 0; /* Removes default margin */
   padding: 0; /* Adjust padding to fit design, could be 0 */
   align-items: flex-end;
+  font-family: 'Circular Bold', sans-serif;
 }
 
 .project-details {
@@ -214,10 +236,11 @@
   color: white;
   font-size: 16px; /* Adjust size as necessary */
   margin-top: 5px; /* Optional: Adds a small gap between the h1 and the details */
+  margin-left: 3px;
 }
 
 .project-details a {
-  color: #1DB954; /* Bright green for link for consistency with design */
+  color: white; /* Bright green for link for consistency with design */
   text-decoration: none; /* Removes underline */
 }
 
@@ -227,7 +250,7 @@
 
 .project-details span {
   margin-left: 5px; /* Adds a small space between the link and the span text */
-  color: white; /* Ensures visibility */
+  color: #B8B9C5; /* Ensures visibility */
 }
 
 
@@ -265,6 +288,7 @@
     flex-grow: 1;
     flex-direction: row; /* Ensure items are in a row */
     padding-left: 5px; /* Padding from the left */
+    padding-right: 8px;
   }
 
   .title-icon {
@@ -295,7 +319,7 @@
     flex: 1;
     display: flex;
     align-items: flex-end; /* Vertically centers the link and text within the 'project-details' */
-    color: white;
+    color: #B8B9C5;
     font-size: 16px; /* Adjust size as necessary */
     margin-top: 5px; /* Optional: Adds a small gap between the h1 and the details */
   }

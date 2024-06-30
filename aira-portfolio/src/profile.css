@@ -1,192 +1,192 @@
 .profile-container {
-    background-color: #121212;  /* Dark background for the container */
-    border-radius: 10px;        /* Rounded corners for visual appeal */
-    padding: 20px;              /* Padding inside the container to prevent content from touching the edges */
-    margin: 5px;                /* Uniform margin around the container */
-    margin-top: 15px;           /* Additional top margin to lower the container within the column */
-    width: 100%;                /* Container takes the full width available within its parent */
-    max-width: 500px;           /* Maximum width to prevent the container from being too wide */
-    max-height: calc(100vh - 40px); /* Maximum height adjusted for the additional top margin */
-    overflow-y: auto;           /* Allows vertical scrolling within the container */
-    scrollbar-width: none;      /* Hides the scrollbar in Firefox */
-
-    /* Hides the scrollbar in WebKit browsers (Chrome, Safari, newer versions of Edge) */
-    /* This style needs to be nested directly under WebKit specific pseudo-elements. */
+  background-color: #121212;  /* Dark background for the container */
+  border-radius: 10px;        /* Rounded corners for visual appeal */
+  padding: 20px;              /* Padding inside the container to prevent content from touching the edges */
+  margin: 5px;                /* Uniform margin around the container */
+  margin-top: 15px;           /* Additional top margin to lower the container within the column */
+  width: 100%;                /* Container takes the full width available within its parent */
+  max-width: 500px;           /* Maximum width to prevent the container from being too wide */
+  max-height: calc(100vh - 40px); /* Maximum height adjusted for the additional top margin */
+  overflow-y: auto;           /* Allows vertical scrolling within the container */
+  scrollbar-width: none;      /* Hides the scrollbar in Firefox */
+  /* Hides the scrollbar in WebKit browsers (Chrome, Safari, newer versions of Edge) */
+  /* This style needs to be nested directly under WebKit specific pseudo-elements. */
 }
 
 /* WebKit browsers scrollbar hiding */
 .profile-container::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-
 .profile-header {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .profile-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Circular profile picture */
-    margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Circular profile picture */
+  margin-right: 20px;
 }
 
 .profile-info h1, .profile-info p {
-    margin: 0;
+  margin: 0;
 }
 
 .profile-section {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .profile-section h2 {
-    color: #1DB954; /* Spotify green for headings */
+  color: #1DB954; /* Spotify green for headings */
+}
+
+.contact-number {
+  font-size: 12px; /* Spotify green for headings */
 }
 
 /* Profile.css */
 .skills-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .skills-header h2 {
-    margin: 0; /* Removes default margin from h2 */
-  }
-  
-  .show-all-text {
-    cursor: pointer;
-    color: gray;
-    font-size: 16px;
-  }
-  
-  .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 10px;
-  }
-  
-  .skill {
-    margin: 3px 3px 20px 3px;
-    flex-basis: calc(33% - 6px);
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Updated to ensure left alignment is respected */
-  }
-  
-  .skill-image {
-    width: 120px;
-    height: 120px;
-    border-radius: 8px;
-    object-fit: cover;
-  }
-  
-  .skill-name {
-    margin-top: 5px;
-    text-align: left;
-    width: 100%; /* Makes sure alignment affects the entire text width */
-  }
-  
-  /* education */
-  .education-container {
-    display: flex;
-    justify-content: space-between; /* Keeps items evenly spaced */
-    align-items: flex-start; /* Aligns items at the top */
-    margin-top: 10px;
-  }
-  
-  .education {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5px; /* Uniform margin around each item */
-    flex-basis: calc(33% - 10px); /* Consistent width as in skills */
-  }
-  
-  .education-image {
-    width: 120px; /* Consistent size for all circles */
-    height: 120px;
-    border-radius: 50%; /* Circle shape */
-    object-fit: cover; /* Ensures images fit the dimensions without distortion */
-    margin-bottom: 5px; /* Space between the image and the text */
-  }
-  
-  .education-name {
-    text-align: left;
-    font-size: 14px; /* Appropriate font size */
-    max-height: 54px; /* Max height for text to accommodate up to three lines */
-    overflow: hidden; /* Hides overflow text */
-    display: -webkit-box;
-    -webkit-line-clamp: 3; /* Limits text to three lines */
-    -webkit-box-orient: vertical;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-header h2 {
+  margin: 0; /* Removes default margin from h2 */
+}
+
+.show-all-text {
+  cursor: pointer;
+  color: gray;
+  font-size: 16px;
+  padding-right: 15px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.skill {
+  margin: 3px 3px 20px 3px;
+  flex-basis: calc(33% - 6px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Updated to ensure left alignment is respected */
+}
+
+.skill-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.skill-name {
+  margin-top: 5px;
+  text-align: left;
+  width: 100%; /* Makes sure alignment affects the entire text width */
+}
+
+/* education */
+.education-container {
+  display: flex;
+  justify-content: space-between; /* Keeps items evenly spaced */
+  align-items: flex-start; /* Aligns items at the top */
+  margin-top: 10px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px; /* Uniform margin around each item */
+  flex-basis: calc(33% - 10px); /* Consistent width as in skills */
+}
+
+.education-image {
+  width: 120px; /* Consistent size for all circles */
+  height: 120px;
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover; /* Ensures images fit the dimensions without distortion */
+  margin-bottom: 5px; /* Space between the image and the text */
+}
+
+.education-name {
+  text-align: left;
+  font-size: 14px; /* Appropriate font size */
+  max-height: 54px; /* Max height for text to accommodate up to three lines */
+  overflow: hidden; /* Hides overflow text */
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limits text to three lines */
+  -webkit-box-orient: vertical;
+}
   
 /*co-curricular*/
 .co-curricular-container {
-    display: flex;
-    justify-content: flex-start; /* Aligns items to the left */
-    align-items: flex-start; /* Ensures top alignment */
-    margin-top: 10px;
-  }
-  
-  .co-curricular {
-    display: flex;
+  display: flex;
+  justify-content: flex-start; /* Aligns items to the left */
+  align-items: flex-start; /* Ensures top alignment */
+  margin-top: 10px;
+}
+
+.co-curricular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  flex-basis: calc(33% - 10px); /* Takes up space as if it were one of three items */
+}
+
+.co-curricular-image {
+  width: 120px; /* Consistent size with education section */
+  height: 120px;
+  border-radius: 50%; /* Circle shape */
+  object-fit: cover; /* Ensures the image fits the frame properly */
+  margin-bottom: 5px; /* Space between image and text */
+}
+
+.co-curricular-name {
+  text-align: left;
+  font-size: 14px;
+  max-height: 54px; /* Allows for up to three lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
     flex-direction: column;
     align-items: center;
-    margin: 5px;
-    flex-basis: calc(33% - 10px); /* Takes up space as if it were one of three items */
   }
-  
-  .co-curricular-image {
-    width: 120px; /* Consistent size with education section */
-    height: 120px;
-    border-radius: 50%; /* Circle shape */
-    object-fit: cover; /* Ensures the image fits the frame properly */
-    margin-bottom: 5px; /* Space between image and text */
+
+  .profile-image {
+    margin-bottom: 10px;
   }
-  
-  .co-curricular-name {
+
+  .skills-container, .education-container, .co-curricular-container {
+    justify-content: space-between; /* Adjust if needed to fit design */
+  }
+
+  .skill, .education, .co-curricular {
+    flex-basis: calc(33.333% - 10px); /* Adjusted for margin to fit 3 items per row */
+    margin: 5px; /* Ensures space around each item */
+  }
+
+  .skill-image, .education-image, .co-curricular-image {
+    width: 90px; /* Smaller image sizes for mobile view */
+    height: 90px;
+  }
+
+  .skill-name, .education-name, .co-curricular-name {
     text-align: left;
-    font-size: 14px;
-    max-height: 54px; /* Allows for up to three lines */
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
   }
-  
-  
-  
-  
-  @media (max-width: 768px) {
-    .profile-header {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .profile-image {
-        margin-bottom: 10px;
-    }
-
-    .skills-container, .education-container, .co-curricular-container {
-        justify-content: space-between; /* Adjust if needed to fit design */
-    }
-
-    .skill, .education, .co-curricular {
-        flex-basis: calc(33.333% - 10px); /* Adjusted for margin to fit 3 items per row */
-        margin: 5px; /* Ensures space around each item */
-    }
-
-    .skill-image, .education-image, .co-curricular-image {
-        width: 90px; /* Smaller image sizes for mobile view */
-        height: 90px;
-    }
-
-    .skill-name, .education-name, .co-curricular-name {
-        text-align: left;
-    }
 }
 
