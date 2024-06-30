@@ -1,19 +1,24 @@
 import React, { useState } from 'react';
-import './project.css';
-import placeholderImage from './react.jpg';
+import '../css/project.css';
 import '@fortawesome/fontawesome-free/css/all.css';
+import picsel from '../images/picsel.png';
+import lolcode from '../images/lolcode.png';
+import tictactoe from '../images/tictactoe.png';
+import p2p from '../images/p2p.png';
+import cas from '../images/cas.png';
+import flutter from '../images/flutter.png';
+import projects from '../images/projects.png';
 
 function Projects() {
   const [expanded, setExpanded] = useState(new Set());  // State to keep track of expanded item
-  const [allExpanded, setAllExpanded] = useState(false); // Tracks expansion of all items
 
   const tracks = [
-    { number: 1, title: "PICSEL: Room Reservation System", role: "Backend Developer", stack: "PERN", date: "May 2024", github: "https://github.com/airanatividad/portfolio", website: "https://picsel-e4l.vercel.app/", image: placeholderImage, description: "Collaborated with my entire section to develop a room reservation system designed to optimize booking processes, utilizing PERN stack." },
-    { number: 2, title: "LOLCode Interpreter", role: "Developer", stack: "Python", date: "Jan 2024", github: null, website: "https://drive.google.com/file/d/1eFbFnqUa_oOkxeTABy6yx84n5H_KpOvR/view?usp=sharing", image: placeholderImage, description: "An interpreter for the LOLCode Programming Language built with Python and Tkinter." },
-    { number: 3, title: "Unbeatable TicTacToe Game", role: "Developer", stack: "Python", date: "Dec 2023", github: null, website: "https://drive.google.com/file/d/1Zhy_6P_FRL8AtbpLpzqaeb1uqf5EUbxj/view?usp=sharing", image: placeholderImage, description: "An unbeatable AI agent for TicTacToe that utilizes the MinMax algorithm with Alpha-Beta pruning, implemented in Python and Tkinter." },
-    { number: 4, title: "P2P: A Lending Tracker App", role: "Full Stack Developer", stack: "PHP, MariaDB, jQuery", date: "June 2023", github: "https://github.com/Danke86/P2P-Loan-Tracker", website: null, image: placeholderImage, description: "An information system that allows to record, data of owed money from friend or group expenses built with PHP, Bootstrap, jQuery, and MariaDB." },
-    { number: 5, title: "Clearance Application System", role: "Backend Developer", stack: "MERN", date: "June 2023", github: "https://github.com/airanatividad/clearance-application-site", website: null, image: placeholderImage, description: "A comprehensive clearance approval system built using MERN stack." },
-    { number: 6, title: "COVID-19 Health Monitoring Mobile App", role: "Full Stack Developer", stack: "Flutter, Firebase", date: "June 2023", github: "https://github.com/CMSC-23-2nd-Sem-2022-2023/project-atienza_iloso_natividad_taag", website: null, image: placeholderImage, description: "A Flutter-Firebase Mobile application designed to track and monitor the health status of users in relation to COVID-19." }
+    { number: 1, title: "PICSEL: Room Reservation System", role: "Backend Developer", stack: "PERN", date: "May 2024", github: "https://github.com/airanatividad/portfolio", website: "https://picsel-e4l.vercel.app/", image: picsel, description: "Collaborated with my entire section to develop a room reservation system designed to optimize booking processes, utilizing PERN stack." },
+    { number: 2, title: "LOLCode Interpreter", role: "Developer", stack: "Python, Tkinter", date: "Jan 2024", github: null, website: "https://drive.google.com/file/d/1eFbFnqUa_oOkxeTABy6yx84n5H_KpOvR/view?usp=sharing", image: lolcode, description: "An interpreter for the LOLCode Programming Language built with Python and Tkinter." },
+    { number: 3, title: "Unbeatable TicTacToe Game", role: "Developer", stack: "Python, Tkinter", date: "Dec 2023", github: null, website: "https://drive.google.com/file/d/1Zhy_6P_FRL8AtbpLpzqaeb1uqf5EUbxj/view?usp=sharing", image: tictactoe, description: "An unbeatable AI agent for TicTacToe that utilizes the MinMax algorithm with Alpha-Beta pruning, implemented in Python and Tkinter." },
+    { number: 4, title: "P2P: A Lending Tracker App", role: "Full Stack Developer", stack: "PHP, MariaDB, jQuery", date: "June 2023", github: "https://github.com/Danke86/P2P-Loan-Tracker", website: null, image: p2p, description: "An information system that allows to record, data of owed money from friend or group expenses built with PHP, Bootstrap, jQuery, and MariaDB." },
+    { number: 5, title: "Clearance Application System", role: "Backend Developer", stack: "MERN", date: "June 2023", github: "https://github.com/airanatividad/clearance-application-site", website: null, image: cas, description: "A comprehensive clearance approval system built using MERN stack." },
+    { number: 6, title: "COVID-19 Health Monitoring Mobile App", role: "Full Stack Developer", stack: "Flutter, Firebase", date: "June 2023", github: "https://github.com/CMSC-23-2nd-Sem-2022-2023/project-atienza_iloso_natividad_taag", website: null, image: flutter, description: "A Flutter-Firebase Mobile application designed to track and monitor the health status of users in relation to COVID-19." }
   ];
 
 // Toggle individual track expansion
@@ -40,7 +45,7 @@ return (
   <div className="right-column">
     <div className="playlist-container">
       <div className="projects-title-card">
-        <img src={placeholderImage} alt="Project Icon" className="title-icon" />
+        <img src={projects} alt="Project Icon" className="title-icon" />
         <div className='project-text'>
           <div className="project-title">Projects</div>
           <div className="project-details">

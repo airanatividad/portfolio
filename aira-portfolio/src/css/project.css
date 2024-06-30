@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Circular Bold';
-  src: url('../public/fonts/CircularSpotifyText-Black.otf') format('truetype'); /* Adjust the path as necessary */
+  src: url('../../public/fonts/CircularSpotifyText-Black.otf') format('truetype'); /* Adjust the path as necessary */
   font-weight: bold;
   font-style: bold;
 }
@@ -114,6 +114,15 @@
   margin-bottom: 20px;
 }
 
+/* Hover effect for the play-button */
+.play-button:hover {
+  background-color: #1DB954; /* Slightly lighter green to indicate hover */
+  transform: scale(1.1); /* Enlarges the button by 10% */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.4); /* Subtle shadow for depth */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions for all properties */
+}
+
+
 .play-button i {
   pointer-events: none; /* Prevents the icon from being clickable separately from the button */
 }
@@ -188,7 +197,7 @@
   display: flex;
   align-items: center;
   background: linear-gradient(to bottom, #1DB954, #121212); /* Gradient background */
-  padding: 80px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
+  padding: 100px 20px 20px 20px; /* top bottom left right Padding inside the card for internal spacing */
   margin: 0; /* Removes any margin to make it stick to the container edges */
   border-radius: 10px; /* Makes corners rounder */
 }
@@ -201,6 +210,12 @@
   margin-top: 20px; /* Adds space at the top of the square image */
   margin-left: 10px;
   border-radius: 10px
+}
+
+.title-icon:hover {
+  transform: scale(1.05); /* Makes the image 10% larger */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's interactive */
 }
 
 .project-details {
@@ -251,6 +266,23 @@
 .project-details span {
   margin-left: 5px; /* Adds a small space between the link and the span text */
   color: #B8B9C5; /* Ensures visibility */
+}
+
+/* Hover effect for playlist items */
+.playlist-item:hover {
+  transform: scale(1.013); /* Lifts the item up by 5px */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5); /* Adds shadow for 3D effect */
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transition for transform and shadow */
+  background-color: #282828; /* Slightly darker background on hover */
+  border-radius: 5px;
+}
+
+/* Ensure that expanded items maintain a distinct style even when hovered */
+.playlist-item.expanded:hover {
+  transform: scale(1.013);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6); /* Slightly deeper shadow for expanded items */
+  background-color: #202020; /* Different background color for distinction */
+  border-radius: 5px;
 }
 
 

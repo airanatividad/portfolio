@@ -1,28 +1,37 @@
 import React, { useState } from 'react';
-import './profile.css';
-import placeholderImage from './react.jpg'; // Import the image
-import profilePic from './Natividad.jpg';
+import '../css/profile.css';
+import javascript from '../images/javascript.png';
+import python from '../images/python.png';
+import c from '../images/c.png';
+import java from '../images/java.png';
+import php from '../images/php.png';
+import r from '../images/r.png';
+import ces from '../images/ces.png';
+import ccc from '../images/ccc.png';
+import uplb from '../images/uplb.png';
+import uplbcoss from '../images/coss.png';
+import profilePic from '../images/Natividad.jpg';
 
 function Profile() {
     const [showAll, setShowAll] = useState(false); // State to toggle showing all skills
     const techskills = [
-        { name: "JavaScript", img: placeholderImage },
-        { name: "C", img: placeholderImage },
-        { name: "Python", img: placeholderImage },
-        { name: "Java", img: placeholderImage },
-        { name: "PHP", img: placeholderImage },
-        { name: "R", img: placeholderImage }
+        { name: "JavaScript", img: javascript },
+        { name: "C", img: c },
+        { name: "Python", img: python },
+        { name: "Java", img: java },
+        { name: "PHP", img: php },
+        { name: "R", img: r }
     ];
 
     const education = [
-        { name: "Cainta Elementary School", img: placeholderImage },
-        { name: "Cainta Catholic College", img: placeholderImage },
-        { name: "University of the Philippines Los Banos", img: placeholderImage }
+        { name: "Cainta Elementary School", img: ces },
+        { name: "Cainta Catholic College", img: ccc },
+        { name: "University of the Philippines Los Banos", img: uplb }
       ];
 
       const coCurricular = {
         name: "UPLB Computer Science Society",
-        img: placeholderImage
+        img: uplbcoss
       };
 
   return (

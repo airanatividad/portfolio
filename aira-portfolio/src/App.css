@@ -1,5 +1,4 @@
 /* Global and container styles */
-/* In App.css or a new file like fonts.css */
 @font-face {
   font-family: 'Circular';
   src: url('../public/fonts/CircularSpotifyText-Medium.otf') format('truetype'); /* Adjust the path as necessary */

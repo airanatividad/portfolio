@@ -161,6 +161,27 @@
   -webkit-box-orient: vertical;
 }
 
+/* Animation for skill images */
+.skill-image:hover {
+  transform: scale(1.05); /* Makes the image 10% larger */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's interactive */
+}
+
+/* Animation for education images */
+.education-image:hover {
+  transform: scale(1.05); /* Makes the image 10% larger */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's interactive */
+}
+
+/* Animation for co-curricular images */
+.co-curricular-image:hover {
+  transform: scale(1.05); /* Makes the image 10% larger */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for the transform */
+  cursor: pointer; /* Changes cursor to pointer to indicate it's interactive */
+}
+
 @media (max-width: 768px) {
   .profile-header {
     flex-direction: column;

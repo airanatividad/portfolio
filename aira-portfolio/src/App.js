@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import Profile from './profile';
-import Projects from './project';
+import Profile from './components/profile';
+import Projects from './components/project';
 
 function App() {
   return (
