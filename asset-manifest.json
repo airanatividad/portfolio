@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.084d377c.css",
+    "main.js": "/portfolio/static/js/main.3520278b.js",
+    "static/media/Natividad.jpg": "/portfolio/static/media/Natividad.7c27b542f797558cd7ec.jpg",
+    "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
+    "static/media/ces.png": "/portfolio/static/media/ces.e1ba9d4c450e65b4127a.png",
+    "static/media/fa-brands-400.ttf": "/portfolio/static/media/fa-brands-400.60127e352b7a11f7f1bc.ttf",
+    "static/media/coss.png": "/portfolio/static/media/coss.f294229cb39f8178dc39.png",
+    "static/media/ccc.png": "/portfolio/static/media/ccc.95ef8158f6a7161fc97e.png",
+    "static/media/fa-solid-900.woff2": "/portfolio/static/media/fa-solid-900.4d986b00ff9ca3828fbd.woff2",
+    "static/media/uplb.png": "/portfolio/static/media/uplb.ccbf2251b1079fe9a4ed.png",
+    "static/media/p2p.png": "/portfolio/static/media/p2p.cf5151d57e1089464660.png",
+    "static/media/fa-brands-400.woff2": "/portfolio/static/media/fa-brands-400.455ea818179b4def0c43.woff2",
+    "static/media/projects.png": "/portfolio/static/media/projects.bbb7337169ada0662c85.png",
+    "static/media/CircularSpotifyText-Black.otf": "/portfolio/static/media/CircularSpotifyText-Black.4d9537a9773dfc1f9edd.otf",
+    "static/media/CircularSpotifyText-Medium.otf": "/portfolio/static/media/CircularSpotifyText-Medium.7f8341c6940468e86d8d.otf",
+    "static/media/python.png": "/portfolio/static/media/python.b4853fadb59e78fa8395.png",
+    "static/media/fa-regular-400.ttf": "/portfolio/static/media/fa-regular-400.eb91f7b948a42799f678.ttf",
+    "static/media/lolcode.png": "/portfolio/static/media/lolcode.2efdb0058f5641967824.png",
+    "static/media/r.png": "/portfolio/static/media/r.89cbfc4d2fe1bbd7e147.png",
+    "static/media/php.png": "/portfolio/static/media/php.9d61e3b56daa92535f4e.png",
+    "static/media/java.png": "/portfolio/static/media/java.2a4b322ed56f8c3f060e.png",
+    "static/media/tictactoe.png": "/portfolio/static/media/tictactoe.5a0a4971fdc36278a627.png",
+    "static/media/c.png": "/portfolio/static/media/c.5c25f817f7470a32d4f6.png",
+    "static/media/fa-regular-400.woff2": "/portfolio/static/media/fa-regular-400.21cb8f55d8e0c5b89751.woff2",
+    "static/media/cas.png": "/portfolio/static/media/cas.08addb6159272cea89c4.png",
+    "static/media/javascript.png": "/portfolio/static/media/javascript.abcbb9f5052930f4d004.png",
+    "static/media/flutter.png": "/portfolio/static/media/flutter.4049f8281739e335e779.png",
+    "static/media/picsel.png": "/portfolio/static/media/picsel.e2e0a3225564f3b32ee4.png",
+    "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
+    "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
+    "index.html": "/portfolio/index.html",
+    "main.084d377c.css.map": "/portfolio/static/css/main.084d377c.css.map",
+    "main.3520278b.js.map": "/portfolio/static/js/main.3520278b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.084d377c.css",
+    "static/js/main.3520278b.js"
+  ]
+}
