@@ -95,6 +95,15 @@
   margin-right: 20px;
 }
 
+.button-container {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+  justify-content: start; /* Align buttons to the left */
+  margin-left: 30px; /* Left alignment with the column header */
+  margin-top: 10px; /* Top margin for spacing */
+  margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
 .play-button {
   font-size: 24px; /* Icon size */
   color: black; /* Icon color */
@@ -109,7 +118,6 @@
   align-items: center; /* Center the icon vertically */
   padding: 0; /* Remove any default padding */
   outline: none; /* Remove focus outline */
-  margin-left: 30px; /* Left alignment with the title icon and column header */
   margin-top: 10px;
   margin-bottom: 20px;
 }
@@ -125,6 +133,28 @@
 
 .play-button i {
   pointer-events: none; /* Prevents the icon from being clickable separately from the button */
+}
+
+.download-button {
+  text-decoration: none; /* Removes underline from the link */
+  font-size: 30px; /* Matching the play-button size */
+  color: #1DB954; /* Icon color */
+  border: gray; /* No border */
+  border-radius: 50%; /* Makes the button round */
+  cursor: pointer;
+  width: 50px; /* Diameter of the button */
+  height: 50px; /* Diameter of the button */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  margin-left: 10px; /* Space between play-button and download-button */
+  margin-bottom: 5px;
+  outline: gray; /* Remove focus outline */
+}
+
+.download-button:hover {
+  transform: scale(1.1); /* Enlarges the button by 10% */
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions for all properties */
 }
 
 .expanded .track-description {
@@ -284,7 +314,6 @@
   background-color: #202020; /* Different background color for distinction */
   border-radius: 5px;
 }
-
 
 /* Mobile-specific styles */
 @media (max-width: 768px) {

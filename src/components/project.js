@@ -54,9 +54,14 @@ return (
           </div>
         </div>
       </div>
-      <button onClick={expandAllTracks} className="play-button">
-        <i className="fas fa-play"></i>
-      </button>
+      <div className="button-container">
+        <button onClick={expandAllTracks} className="play-button">
+          <i className="fas fa-play"></i>
+        </button>
+        <a href="https://github.com/airanatividad/portfolio/blob/main/public/NatividadAira_Resume.pdf" target="_blank" rel="noopener noreferrer" className="download-button">
+            <i className="fas fa-arrow-circle-down"></i> 
+        </a>
+      </div>
       <div className="playlist-header">
         <div className="track-number">#</div>
         <div className="track-info-head">Project</div>

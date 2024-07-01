@@ -183,9 +183,9 @@
 }
 
 @media (max-width: 768px) {
-  /* WebKit browsers scrollbar hiding */
   .profile-container {
     overflow-y: visible;
+    max-height: none; /* Removes max height restriction to allow content to flow naturally */
   }
 
   .profile-header {
