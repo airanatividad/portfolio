@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.03cb4471.css",
+    "main.css": "/portfolio/static/css/main.57a87cbf.css",
     "main.js": "/portfolio/static/js/main.820f4287.js",
     "static/media/Natividad.jpg": "/portfolio/static/media/Natividad.7c27b542f797558cd7ec.jpg",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
@@ -31,11 +31,11 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/portfolio/index.html",
-    "main.03cb4471.css.map": "/portfolio/static/css/main.03cb4471.css.map",
+    "main.57a87cbf.css.map": "/portfolio/static/css/main.57a87cbf.css.map",
     "main.820f4287.js.map": "/portfolio/static/js/main.820f4287.js.map"
   },
   "entrypoints": [
-    "static/css/main.03cb4471.css",
+    "static/css/main.57a87cbf.css",
     "static/js/main.820f4287.js"
   ]
 }
