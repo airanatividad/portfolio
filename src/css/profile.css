@@ -186,6 +186,7 @@
   .profile-container {
     overflow-y: visible;
     max-height: none; /* Removes max height restriction to allow content to flow naturally */
+    padding-bottom: 20px;
   }
 
   .profile-header {
