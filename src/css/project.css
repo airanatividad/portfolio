@@ -366,6 +366,10 @@
     padding-top: 10px; /* Additional padding for clarity */
     text-align: left; /* Align text to the left */
   }
+
+  .right-column {
+    margin-left: 5px; /* Adjusted margin for better alignment */
+  }
 }
 
 

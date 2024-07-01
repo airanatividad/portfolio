@@ -61,7 +61,6 @@ body::-webkit-scrollbar {
   display: none; /* Ensures scrollbar does not appear */
 }
 
-
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -69,6 +68,16 @@ body::-webkit-scrollbar {
 
   .column.left, .column.right {
     flex: 1 0 100%; /* Make both columns full width on smaller screens */
+    overflow-y: visible; /* Disables vertical scrolling within columns */
+  }
+
+  .column.right {
+    padding-bottom: 20px; /* Padding around column content */
+  }
+
+  body {
+    overflow-y: auto; /* Enables scrolling for the entire page */
   }
 }
+
   
