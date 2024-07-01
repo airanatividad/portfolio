@@ -400,6 +400,7 @@
     margin-left: 5px; /* Adjusted margin for better alignment */
     flex: 1 0 100%; /* Make both columns full width on smaller screens */
     overflow-y: visible; /* Disables vertical scrolling within columns */
+    padding-bottom: 10px;
   }
 }
 
