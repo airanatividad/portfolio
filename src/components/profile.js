@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import '../css/profile.css';
 import javascript from '../images/javascript.png';
 import python from '../images/python.png';
@@ -14,6 +14,20 @@ import profilePic from '../images/Natividad.jpg';
 
 function Profile() {
     const [showAll, setShowAll] = useState(false); // State to toggle showing all skills
+    const [skillsHeight, setSkillsHeight] = useState('0px'); // State to control the height of the skills container
+    const skillsRef = useRef(null); // Ref to measure the full height of the skills container
+
+    useEffect(() => {
+        if (skillsRef.current) {
+            setSkillsHeight(`${skillsRef.current.scrollHeight}px`); // Set the height based on the full content size
+        }
+    }, []);
+
+    const toggleSkills = () => {
+        setShowAll(!showAll);
+        setSkillsHeight(showAll ? '150px' : `${skillsRef.current.scrollHeight}px`); // Toggle between full height and reduced height
+    };
+    
     const techskills = [
         { name: "JavaScript", img: javascript },
         { name: "C", img: c },
@@ -52,18 +66,18 @@ function Profile() {
         </div>
         
         <div className="profile-section">
-            <div className="skills-header">
+        <div className="skills-header">
                 <h2>Skills and Interests</h2>
-                <span onClick={() => setShowAll(!showAll)} className="show-all-text">
-                {showAll ? "Show Less" : "Show All"}
+                <span onClick={toggleSkills} className="show-all-text">
+                    {showAll ? "Show Less" : "Show All"}
                 </span>
             </div>
-            <div className="skills-container">
-                {techskills.slice(0, showAll ? techskills.length : 3).map((skill, index) => (
-                <div key={index} className="skill">
-                    <img src={skill.img} alt={skill.name} className="skill-image"/>
-                    <div className="skill-name">{skill.name}</div>
-                </div>
+            <div className="skills-container" style={{ height: showAll ? skillsHeight : '150px', overflow: 'hidden', transition: 'height 0.5s ease' }} ref={skillsRef}>
+                {techskills.map((skill, index) => (
+                    <div key={index} className="skill">
+                        <img src={skill.img} alt={skill.name} className="skill-image"/>
+                        <div className="skill-name">{skill.name}</div>
+                    </div>
                 ))}
             </div>
         </div>
