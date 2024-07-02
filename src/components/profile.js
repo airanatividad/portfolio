@@ -48,7 +48,7 @@ function Profile() {
             <div className="skills-header">
                 <h2>About Me</h2>
             </div>
-            <p>Hello! I'm Aira. I'm a Computer Science student with a passion for Full Stack development.  I love tackling programming challenges and am eager to collaborate on projects that enhance user experiences. Let's connect!</p>
+            <p>Hello! I'm Aira. I'm a Computer Science student with a passion for Full Stack development.  I love tackling programming challenges and creating applications that enhance user experiences. With strong communication skills and a knack for teamwork, I'm keen to collaborate on innovative projects. Let's connect!</p>
         </div>
         
         <div className="profile-section">
