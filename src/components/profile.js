@@ -43,6 +43,13 @@ function Profile() {
                 <p>annatividad@up.edu.ph | 09604717131</p>
             </div>
         </div>
+
+        <div className="profile-section">
+            <div className="skills-header">
+                <h2>About Me</h2>
+            </div>
+            <p>Hello! I'm Aira. I'm a Computer Science student with a passion for Full Stack development.  I love tackling programming challenges and am eager to collaborate on projects that enhance user experiences. Let's connect!</p>
+        </div>
         
         <div className="profile-section">
             <div className="skills-header">
