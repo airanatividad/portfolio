@@ -136,6 +136,7 @@
 }
 
 .download-button {
+  position: relative;
   text-decoration: none; /* Removes underline from the link */
   font-size: 30px; /* Matching the play-button size */
   color: #1DB954; /* Icon color */
@@ -152,9 +153,26 @@
   outline: gray; /* Remove focus outline */
 }
 
+.download-button:hover::after {
+  content: "Download Resume"; /* Text to display */
+  position: absolute;
+  bottom: -20px; /* Positioning below the button */
+  left: 50%;
+  transform: translateX(-50%); /* Center the text under the button */
+  background-color: #1DB954; /* Background color of the tooltip */
+  color: black; /* Text color */
+  padding: 4px; /* Padding around the text */
+  border-radius: 5px; /* Rounded corners for the tooltip */
+  white-space: nowrap; /* Ensures the text does not wrap */
+  font-size: 10px; /* Font size of the tooltip text */
+  box-shadow: 0 2px 2px rgba(0,0,0,0.25); /* Optional: Adds shadow for depth */
+  z-index: 10; /* Ensures it's above other elements */
+}
+
 .download-button:hover {
   transform: scale(1.1); /* Enlarges the button by 10% */
-  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Smooth transitions for all properties */
+  transition: transform 0.2s ease-in-out; /* Smooth transition for transform */
+  /* Other existing hover styles... */
 }
 
 .expanded .track-description {
