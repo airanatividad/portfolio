@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7f72f38c.css",
-    "main.js": "/portfolio/static/js/main.a4e04322.js",
+    "main.css": "/portfolio/static/css/main.c2394f57.css",
+    "main.js": "/portfolio/static/js/main.066b6853.js",
     "static/media/Natividad.jpg": "/portfolio/static/media/Natividad.7c27b542f797558cd7ec.jpg",
     "static/media/fa-solid-900.ttf": "/portfolio/static/media/fa-solid-900.bacd5de623fb563b961a.ttf",
     "static/media/ces.png": "/portfolio/static/media/ces.e1ba9d4c450e65b4127a.png",
@@ -31,11 +31,11 @@
     "static/media/fa-v4compatibility.ttf": "/portfolio/static/media/fa-v4compatibility.c8e090db312b0bea2aa2.ttf",
     "static/media/fa-v4compatibility.woff2": "/portfolio/static/media/fa-v4compatibility.cf7f5903d06b79ad60f1.woff2",
     "index.html": "/portfolio/index.html",
-    "main.7f72f38c.css.map": "/portfolio/static/css/main.7f72f38c.css.map",
-    "main.a4e04322.js.map": "/portfolio/static/js/main.a4e04322.js.map"
+    "main.c2394f57.css.map": "/portfolio/static/css/main.c2394f57.css.map",
+    "main.066b6853.js.map": "/portfolio/static/js/main.066b6853.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f72f38c.css",
-    "static/js/main.a4e04322.js"
+    "static/css/main.c2394f57.css",
+    "static/js/main.066b6853.js"
   ]
 }
