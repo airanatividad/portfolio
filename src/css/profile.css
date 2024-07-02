@@ -164,6 +164,11 @@
     max-height: none; /* Removes max height restriction to allow content to flow naturally */
     padding-bottom: 10px;
   }
+  .profile-info, .profile-image {
+    margin: 0; /* Removes margin to center the content */
+    padding: 0%;
+    text-align: center;
+  }
   .profile-header {
     flex-direction: column;
     align-items: center;
